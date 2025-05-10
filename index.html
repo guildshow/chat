@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>宇宙级聊天助手 - 微信小程序推广页</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Outfit', 'sans-serif'],
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      html.dark body {
+        background-color: #0f172a;
+        color: #f8fafc;
+      }
+    </style>
+  </head>
+  <body class="font-sans bg-gray-50 dark:bg-slate-900 dark:text-slate-100 transition-colors duration-300">
+    <!-- Dark Mode Toggle -->
+    <div class="fixed top-4 right-4 z-50">
+      <button onclick="document.documentElement.classList.toggle('dark')" class="text-xl p-2 rounded-full bg-white dark:bg-slate-700 shadow-md">
+        <i class="fas fa-circle-half-stroke"></i>
+      </button>
+    </div>
+
+    <!-- Hero Section -->
+    <header class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white py-16 px-6 text-center">
+      <h1 class="text-4xl md:text-5xl font-extrabold leading-tight mb-4">宇宙级聊天助手</h1>
+      <p class="text-lg md:text-xl max-w-xl mx-auto">AI全程陪聊，帮你破冰、撩人、约会不再尴尬！</p>
+    </header>
+
+    <!-- Highlights Section -->
+    <section class="max-w-5xl mx-auto py-12 px-6">
+      <p class="text-center text-2xl font-semibold text-indigo-600 dark:text-indigo-300 mb-8">不会聊天？让AI教你！</p>
+      <div class="grid gap-6 md:grid-cols-3">
+        <div class="bg-white dark:bg-slate-800 rounded-xl shadow-lg p-6 text-center">
+          <div class="text-3xl text-indigo-500 mb-3"><i class="fas fa-comments"></i></div>
+          <h3 class="text-xl font-bold mb-2">智能代聊</h3>
+          <p class="text-sm text-slate-600 dark:text-slate-300">不会开场？不会接话？\n AI教你如何说对话！</p>
+        </div>
+        <div class="bg-white dark:bg-slate-800 rounded-xl shadow-lg p-6 text-center">
+          <div class="text-3xl text-pink-500 mb-3"><i class="fas fa-heart"></i></div>
+          <h3 class="text-xl font-bold mb-2">撩人技巧</h3>
+          <p class="text-sm text-slate-600 dark:text-slate-300">从普通话题到情感升温，AI全程引导撩得刚刚好。</p>
+        </div>
+        <div class="bg-white dark:bg-slate-800 rounded-xl shadow-lg p-6 text-center">
+          <div class="text-3xl text-green-500 mb-3"><i class="fas fa-rocket"></i></div>
+          <h3 class="text-xl font-bold mb-2">快速上头</h3>
+          <p class="text-sm text-slate-600 dark:text-slate-300">让对方觉得你既有趣又懂她，轻松推进关系。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- QR Section -->
+    <section class="bg-gray-100 dark:bg-slate-800 py-16 px-6">
+      <div class="max-w-xl mx-auto text-center">
+        <h2 class="text-3xl font-bold mb-4">立即扫码体验</h2>
+        <p class="text-slate-600 dark:text-slate-300 mb-6">打开微信，扫码进入小程序</p>
+        <div class="inline-block bg-white dark:bg-slate-700 p-6 rounded-xl shadow-lg">
+          <img src="https://pic1.imgdb.cn/item/681f12d558cb8da5c8eaf910.jpg" alt="宇宙级聊天助手二维码" class="w-48 h-48 mx-auto" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center text-sm text-slate-500 dark:text-slate-400 py-8">
+      &copy; 2025 宇宙级聊天助手 · 用AI聊出恋爱力
+    </footer>
+  </body>
+</html>
